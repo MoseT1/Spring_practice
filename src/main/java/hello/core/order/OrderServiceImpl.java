@@ -20,6 +20,8 @@ public class OrderServiceImpl implements OrderService {
     * */
     private DiscountPolicy discountPolicy;
 
+    //@RequiredArgsConstructor 기능을 사용하면 final이 붙은 필드를 모아서
+    // 생성자를 자동으로 만들어준다.
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
